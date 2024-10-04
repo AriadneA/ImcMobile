@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lilas"
+    tools:context=".View.Cadastroo">
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Nome:" />
+
+    <EditText
+        android:id="@+id/edtnome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtnome"
+        android:layout_marginRight="10dp"
+        tools:ignore="UnknownId" />
+
+
+    <TextView
+        android:id="@+id/txtAN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Ano de nascimento:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtnome"
+        />
+    <EditText
+        android:id="@+id/edtAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_toRightOf="@+id/txtAN"
+        android:layout_below="@+id/edtnome"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/txtpeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Peso:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtAN"
+        />
+    <EditText
+        android:id="@+id/edtpeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/txtpeso"
+        android:layout_below="@+id/edtAN"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/txtaltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Altura:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtpeso"
+        />
+    <EditText
+        android:id="@+id/edtaltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/txtaltura"
+        android:layout_below="@+id/edtpeso"
+        android:layout_marginRight="10dp"
+        tools:ignore="UnknownId" />
+    <Button
+        android:id="@+id/btcalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/botaoroxo"
+        android:layout_below="@+id/txtaltura"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/btvoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/botaoroxo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:text="voltar" />
+
+
+</RelativeLayout>

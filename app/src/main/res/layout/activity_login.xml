@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lilas"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".View.LoginActivity">
+
+    <TextView
+        android:id="@+id/txtbemvindo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo!"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/imgicon"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/icon" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        android:gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtlogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/login"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            android:hint="Login" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtsenha"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/senha"
+            android:gravity="center"
+            android:hint="Senha"
+            android:inputType="numberPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btlogar"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:backgroundTint="@color/botaoroxo"
+        android:textColor="@color/white"
+        android:text="Logar" />
+        <Button
+            android:id="@+id/btcriarconta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            style="@style/btflat"
+            android:textColor="@color/white"
+            android:text="Criar conta" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btredefinirsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Esqueceu a senha?\nClique aqui!"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+</LinearLayout>

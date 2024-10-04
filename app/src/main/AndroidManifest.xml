@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imcprojeto2ai">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/nome"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ImcProjeto2AI">
+        <activity android:name=".View.RedefinirSenhaActivity"></activity>
+        <activity android:name=".View.CadastrarUsuarioActivity" />
+        <activity android:name=".View.Dados" />
+        <activity android:name=".View.Cadastroo" />
+        <activity
+            android:name=".View.LoginActivity"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

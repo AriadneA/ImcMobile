@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lilas"
+    tools:context=".View.Dados">
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Nome:" />
+
+    <TextView
+        android:id="@+id/edtnome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/txtnome"
+        android:textSize="30dp"
+        tools:ignore="UnknownId" />
+
+
+    <TextView
+        android:id="@+id/txtidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Idade:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtnome"
+        />
+
+    <TextView
+        android:id="@+id/edtidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtnome"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txtidade"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="30dp"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/txtimc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="IMC:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtidade"
+        />
+
+    <TextView
+        android:id="@+id/edtimc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtidade"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/txtidade"
+        android:ems="10"
+        android:maxLength="4"
+        android:inputType="number"
+        android:textSize="30dp"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/txtclassificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="classificação:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtimc"
+        />
+
+    <TextView
+        android:id="@+id/edtclassificaçao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtimc"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txtclassificacao"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="30dp"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/txtpesoideal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Peso Ideal:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtclassificacao"
+        />
+
+    <TextView
+        android:id="@+id/edtpesoideal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtclassificaçao"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/txtpesoideal"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btvoltar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/botaoroxo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:text="voltar" />
+</RelativeLayout>
